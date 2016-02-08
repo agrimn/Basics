@@ -2,8 +2,6 @@ package Execute;
 import java.util.ArrayList;
 import java.util.List;
 
-import chapterOne.One;
-
 public class Execute {
 	
 	public static void main(String [] args) {		
