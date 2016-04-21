@@ -103,38 +103,43 @@ public class Execute {
 //		System.out.println(MultipleOccuranceNo.multipletimes(a));
 		
 		//Lets create nodes as given as an example in the article
-		Node nA=new Node(2);
-		Node nB=new Node(1);
-		Node nC=new Node(3);
-		Node nD=new Node(5);
-		Node nE=new Node(8);
-		Node nF=new Node(9);
-
-		//Create the graph, add nodes, create edges between nodes
-		GraphTraversal g=new GraphTraversal();
-		g.addNode(nA);
-		g.addNode(nB);
-		g.addNode(nC);
-		g.addNode(nD);
-		g.addNode(nE);
-		g.addNode(nF);
-		g.setRootNode(nA);
+//		Node nA=new Node(2);
+//		Node nB=new Node(1);
+//		Node nC=new Node(3);
+//		Node nD=new Node(5);
+//		Node nE=new Node(8);
+//		Node nF=new Node(9);
+//
+//		//Create the graph, add nodes, create edges between nodes
+//		GraphTraversal g=new GraphTraversal();
+//		g.addNode(nA);
+//		g.addNode(nB);
+//		g.addNode(nC);
+//		g.addNode(nD);
+//		g.addNode(nE);
+//		g.addNode(nF);
+//		g.setRootNode(nA);
+//		
+//		g.connectNode(nA,nB);
+//		g.connectNode(nA,nC);
+//		g.connectNode(nA,nD);
+//		
+//		g.connectNode(nB,nE);
+//		g.connectNode(nB,nF);
+//		g.connectNode(nC,nF);
+//		
+//		
+//		//Perform the traversal of the graph
+//		System.out.println("DFS Traversal of a tree is ------------->");
+//		g.dfs();
+//		System.out.println();
+//		System.out.println("BFS Traversal of a tree is ------------->");
+//		g.bfs();
 		
-		g.connectNode(nA,nB);
-		g.connectNode(nA,nC);
-		g.connectNode(nA,nD);
-		
-		g.connectNode(nB,nE);
-		g.connectNode(nB,nF);
-		g.connectNode(nC,nF);
-		
-		
-		//Perform the traversal of the graph
-		System.out.println("DFS Traversal of a tree is ------------->");
-		g.dfs();
-		System.out.println();
-		System.out.println("BFS Traversal of a tree is ------------->");
-		g.bfs();
+		int [] p = {0,1};
+		int [] l = {-1,0};
+		int [] r = {0, 0};
+		System.out.println(SegmentsAndPoints.isPossible(p,l,r));
 	}
 
 }
